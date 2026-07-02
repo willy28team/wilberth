@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPW</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="name"><a href="home.html" class="willy">Wilbert Harriman</a></div>
+    <div class="empty"></div>
+    <div class="home"><a href="home.html">Home</a></div>
+    <div class="skillset"><a href="skills.html">Skills</a></div>
+    <div class="archive"><a href="archive.html">Archives</a></div>
+    <div class="blog"><a href="blog.html">Blog</a></div>
+  </div>
+
+  <div class="skills">
+    <div class="skill">
+      <div class="titleskill">Experience</div>
+      
+      <div class="collapse1">
+      <button type="button" class="collapsible">KNOWLEDGE OF BASIC INFORMATICS AND CYBERSECURITY</button>
+        <div class="contentskill">        
+          Currently, I'm an Informatics Student whose concentration is in Cybersecurity. My GPA as per the 6th semester (2nd year) stands by 3.97/4.00. I have taken core subject courses such as Programming Concept, Data Structure and Algorithm, and Operating System Design. Additionally, I have taken elective courses for my concentration such as Cryptography and Data Security, Ethical Hacking, and Digital Forensics. 
+        </div>
+      </div>
+
+      <div class="collapse2">
+      <button type="button" class="collapsible">KNOWLEDGE OF BASIC PURE MATHEMATICS</button>
+        <div class="contentskill">
+          Throughout my personal studies for the past three years, I have studied Olympiad-level mathematics for high school students (i.e. Algebra, Number Theory, Geometry, and Combinatorics) and higher mathematics for undergraduate students (i.e. Abstract Algebra, Linear Algebra, Real and Complex Analysis, and Combinatorics). My knowledge has been tested in OSN 2023 and ONMIPA 2026, which resulted being one out of 100 finalists in OSN 2023 and gold medalist in ONMIPA 2026, respectively.  
+          <div class="picture">
+            <div><img src="image/osn.jpeg" class="probe" width="300" height="200"></div>
+            <div><img src="image/onmipa.jpg" class="probe" width="350" height="200"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse3">
+      <button type="button" class="collapsible">KNOWLEDGE OF BASIC ART ILLUSTRATION</button>
+        <div class="contentskill">
+          I have been a digital Microsoft Paint artist for the past 2 years. I do my own personal studies regarding perspective, color-theory, composition, forms, etc.
+          <div class="picture2">
+            <div><img src="image/chibi.jpg" class="probe" width="350" height="200"></div>
+            <div><img src="image/just.jpg" class="probe" width="350" height="200"></div>
+            <div><img src="image/altwater.jpg" class="probe" width="350" height="200"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse4">
+      <button type="button" class="collapsible">KNOWLEDGE OF BASIC ORGANIZATION SKILL</button>
+        <div class="contentskill">
+          <p>On September 2024, I joined a dedicated major association organization for Informatics called PUMA (President University Major Association). During my period, I became a member in Students Academic and Competition division. In there, I learned about time-management, bearing responsibility for a major event, and effective communication with others. </p>
+          <p>Additionally, I have been part of KTOM (Kontes Terbuka Olimpiade Matematika, the largest olympiad mathematics community in Indonesia) since June 2025 where I become a committee in QC and Jury Division. On February 2026, I was given trust by the former head division of jury to take over the position. </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+  <div class="footer">
+    @2026 Wilbert Harriman. All Rights Reserved
+  </div>
+
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>
