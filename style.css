@@ -80,7 +80,7 @@ div.titleabou{
 
 
 div.contentabout{
-    color:#bfd5f6;
+    color:#ed9f4b;
     font-weight: bold;
     font-size: 125%;
     font-family: 'Segoe UI';
@@ -92,7 +92,7 @@ div.contentabout{
 }
 
 div.contentabout2{
-    color:rgb(196, 214, 245);
+    color:#ed9f4b;
     font-weight: bold;
     font-size: 125%;
     font-family: 'Segoe UI';
@@ -322,8 +322,6 @@ div.contact-location:hover{
 
 div.footer{
     background-color: #fdbd79;
-    width: auto;
-    height: fit-content;
     padding: 2.5% 10% 2.5% 10%;
     text-align:center;
     font-weight: bold;
@@ -614,4 +612,128 @@ a.willy:link, a.willy:visited, a.willy:hover{
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
+}
+
+p.warning{
+    display: none;
+}
+
+/*responsive css*/
+
+@media (max-width: 720px){
+    div.name, div.home, div.skillset, div.archive, div.blog{
+        font-size: 80%;
+    }
+
+    div.titleabou{
+        font-size: 100%;
+    }
+
+     div.contentabout, div.contentabout2{
+        font-size: 75%;
+     }
+
+     div.expertise{
+        font-size: 75%;
+     }
+
+     .sl{
+        font-size: 50%;
+     }
+
+     .slide-btn {
+        display:none
+     }
+
+     div.contact-text{
+        font-size: 100%;
+     }
+
+     div.contact-email, div.contact-linkedin, div.contact-location{
+        font-size: 75%;
+     }
+
+     div.footer{
+        bottom: 100%
+     }
+
+     div.titleskill{
+        font-size: 100%;
+     }
+     .contentsk{
+        font-size: 75%;
+        padding: 10%;
+     }
+
+     .contentskill{
+        font-size: 50%;
+        padding-top: 7.5%;
+        padding-bottom: 7.5%;
+     }
+
+     .collapsible{
+        font-size: 75%;
+        padding: 10%;
+     }
+
+     img.probe{
+        width: 78.75px;
+        height: 45px;
+     }
+     
+     img.probe:hover{
+        scale: 2;
+     }
+
+     div.arcskill{
+        font-size: 100%;
+     }
+
+     p.pumps{
+        font-size: 75%;
+     }
+
+     div.pumps2{
+        font-size: 75%;
+     }
+
+     img.imgpumps{
+        width: 105px;
+        height: 75px;
+     }
+
+     
+     div.blogtitle{
+        font-size: 100%;
+     }
+
+     p.sol{
+        font-size: 75%;
+     }
+
+     div.sols2{
+        font-size: 75%;
+     }
+
+    div.sols3{
+        font-size: 75%;
+     }
+
+     img.imgpumps{
+        width: 105px;
+        height: 75px;
+     }
+
+     div.footer {
+        position: fixed; 
+        bottom: 0;
+    }
+
+     p.warning{
+        color:#ff6262;
+        font-weight: bold;
+        font-size: 50%;
+        font-family: 'Segoe UI';
+        display: block;
+     }
 }
